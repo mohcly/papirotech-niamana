@@ -34,19 +34,19 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onSuccess }) => {
     <div className="modal" style={{ background: 'rgba(15, 20, 26, 0.88)' }}>
       <div className="sheet" style={{ maxWidth: '440px', padding: '28px' }}>
         <div style={{ textAlign: 'center', marginBottom: '22px' }}>
-          <div style={{
-            width: '52px',
-            height: '52px',
-            borderRadius: '14px',
-            background: 'var(--accent-tint)',
-            border: '1px solid var(--accent-line)',
-            color: 'var(--accent)',
-            display: 'grid',
-            placeItems: 'center',
-            margin: '0 auto 12px'
-          }}>
-            <ShieldCheck size={28} />
-          </div>
+          <img
+            src="/favicon.svg"
+            alt="Papirotech"
+            style={{
+              width: '64px',
+              height: '64px',
+              borderRadius: '16px',
+              margin: '0 auto 14px',
+              display: 'block',
+              boxShadow: '0 6px 20px rgba(227, 171, 69, 0.3)',
+              border: '1px solid rgba(227, 171, 69, 0.35)'
+            }}
+          />
           <div className="eyebrow" style={{ color: 'var(--accent)' }}>Accès Sécurisé</div>
           <h2 style={{ marginTop: '4px' }}>Connexion Papirotech Niamana</h2>
           <div className="sub" style={{ margin: '6px 0 0' }}>

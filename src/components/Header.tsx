@@ -29,11 +29,25 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="top">
-      <div>
-        <div className="eyebrow">Papirotech Niamana</div>
-        <h1 id="h1">Registre des créances & Trésorerie</h1>
-        <div className="sub">
-          Suivi des créances clients, des règlements et du fonds de roulement journalier.
+      <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+        <img
+          src="/favicon.svg"
+          alt="Papirotech Logo"
+          style={{
+            width: '46px',
+            height: '46px',
+            borderRadius: '12px',
+            boxShadow: '0 4px 16px rgba(227, 171, 69, 0.25)',
+            border: '1px solid rgba(227, 171, 69, 0.35)',
+            flexShrink: 0
+          }}
+        />
+        <div>
+          <div className="eyebrow">Papirotech Niamana</div>
+          <h1 id="h1">Registre des créances & Trésorerie</h1>
+          <div className="sub">
+            Suivi des créances clients, des règlements et du fonds de roulement journalier.
+          </div>
         </div>
       </div>
 
